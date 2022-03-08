@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  height: 30px;
+  width: 100px;
+  background-color: grey;
+  outline: none;
+  border: none;
+}
+.btn:hover {
+  background-color: red;
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+
+.block {
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  background-color: grey;
+}
+.block .btn {
+  background: blue;
+}
+.block .btn:hover {
+  background: yellow;
+  border-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

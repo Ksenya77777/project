@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fashion__blog {
+  display: flex;
+  justify-content: space-between;
+}
+.fashion__name {
+  margin-top: 34px;
+  margin-left: 80px;
+}
+.fashion__text {
+  font-family: "PT Serif", serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+.fashion__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 368px;
+  margin-top: 42px;
+  margin-left: 81px;
+}
+.fashion__inside {
+  font-family: "PT Serif", serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

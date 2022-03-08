@@ -1,0 +1,817 @@
+body {
+    background-color: white;
+}
+
+.block {
+    background: yellow;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block:hover {
+    cursor: pointer;
+    background: blue;
+}
+
+.block:hover .block__info {
+    background-color: grey;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.block__info {
+    transition: 1s;
+    background: red;
+    width: 50px;
+    height: 50px;
+
+}
+
+.book {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow;
+}
+
+.book:hover {
+    background: white;
+    cursor: pointer;
+}
+
+.book:hover .book__english {
+    background: blueviolet;
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+
+.book__english {
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+.school {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: darkorange;
+}
+
+.school:hover {
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.class {
+    width: 75px;
+    height: 75px;
+    background: deeppink;
+}
+
+.school:hover .class {
+    width: 10px;
+    height: 10px;
+}
+
+.work {
+    width: 75px;
+    height: 75px;
+    background: plum;
+}
+
+.school:hover .work {
+    width: 20px;
+    height: 20px;
+    background: purple;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 50px auto 100px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    border-right: 20px;
+    transition: 1.5s;
+}
+
+.container__text {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+.container__blocks {
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    padding: 100px 0;
+    transition: 1.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.container__block {
+    height: 150px;
+    background-color: blanchedalmond;
+    width: 300px;
+    transition: 1.5s;
+}
+
+.container__block:first-child {
+    border-radius: 20px 20px 0 0;
+}
+
+.container__block:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+.container:hover {
+    height: 400px;
+    margin-top: 100px;
+}
+
+.container:hover .container__blocks {
+    height: 550px;
+    padding: 0;
+}
+
+.container:hover .container__block {
+    height: 100px;
+}
+
+.today__midnight {
+    margin: 50px auto 100px;
+    position: relative;
+    height: 700px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-right: 20px;
+    transition: 1.5s;
+    position: relative;
+    border-radius: 50%;
+}
+
+.today {
+    margin: 50px auto 100px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    border-right: 20px;
+    transition: 1.5s;
+}
+
+.today__text {
+    height: 500px;
+    width: 300px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.today__night {
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    padding: 100px 0;
+    transition: 1.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+}
+
+
+.today__morning {
+    height: 250px;
+    border-radius: 50%;
+    background-color: blue;
+    width: 300px;
+    transition: 1.5s;
+
+
+}
+
+.today__lunch {
+    height: 250px;
+    border-radius: 50%;
+    background-color: yellow;
+    width: 300px;
+    transition: 1.5s;
+
+}
+
+
+.today:hover {
+    height: 400px;
+    margin-top: 100px;
+}
+
+.today:hover .today__night {
+    height: 550px;
+    padding: 0;
+}
+
+.today:hover .today__lunch {
+    height: 200px;
+}
+
+.red {
+    width: 500px;
+    height: 500px;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red__blue {
+    width: 400px;
+    height: 400px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red__black {
+    width: 200px;
+    height: 200px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.red__pink {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+    transition: 1.5s;
+}
+
+.red:hover .red__blue {
+
+    background: purple;
+}
+
+.red:hover .red__pink {
+    height: 50px;
+    width: 50px;
+    background: orange;
+}
+
+.bags {
+    width: 600px;
+    height: 600px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.bags__trip {
+    width: 200px;
+    height: 200px;
+    background: orange;
+    position: absolute;
+    left: 0px;
+    transition: 1s;
+    top: 0;
+}
+
+.bags__tiket {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    right: 0px;
+    transition: 1s;
+    top: 0;
+}
+
+.bags__sea {
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    right: 0px;
+    transition: 1s;
+    bottom: 0px;
+
+}
+
+.bags__food {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: absolute;
+    transition: 1s;
+    left: 0;
+    bottom: 0;
+
+}
+
+.bags:hover .bags__tiket {
+    right: calc(100% - 200px);
+    top: calc(100% - 200px);
+
+}
+
+.bags:hover .bags__trip {
+    left: calc(100% - 200px);
+    top: calc(100% - 200px);
+}
+
+.bags:hover .bags__sea {
+    right: calc(100% - 200px);
+    bottom: calc(100% - 200px);
+}
+
+.bags:hover .bags__food {
+    left: calc(100% - 200px);
+    bottom: calc(100% - 200px);
+}
+
+.img-block-cars {
+    height: 600px;
+    width: 600px;
+    margin: 100px auto;
+    position: relative;
+    border: 1px solid black;
+}
+
+.car {
+    position: absolute;
+    transition: 2s;
+}
+
+.car:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+
+.car:nth-child(2) {
+    left: 0;
+    bottom: 0;
+}
+
+.car:nth-child(3) {
+    right: 0;
+    top: 0;
+}
+
+.car:nth-child(4) {
+    right: 0;
+    bottom: 0;
+}
+
+.car:nth-child(5) {
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.car:nth-child(6) {
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.car:nth-child(7) {
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.car:nth-child(8) {
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.img-block-cars:hover .car:nth-child(1) {
+    left: calc(100% - 300px);
+    top: calc(100% - 300px);
+    opacity: 0;
+}
+
+.img-block-cars:hover .car:nth-child(2) {
+    left: calc(100% - 300px);
+    bottom: calc(100% - 300px);
+    opacity: 0;
+}
+
+.img-block-cars:hover .car:nth-child(3) {
+    right: calc(100% - 300px);
+    top: calc(100% - 300px);
+    opacity: 0;
+}
+
+.img-block-cars:hover .car:nth-child(4) {
+    right: calc(100% - 300px);
+    bottom: calc(100% - 300px);
+    opacity: 0;
+}
+
+.img-block-cars:hover .car:nth-child(5) {
+    left: calc(100% - 300px);
+    top: calc(100% - 300px);
+    opacity: 1;
+}
+
+.img-block-cars:hover .car:nth-child(6) {
+    left: calc(100% - 300px);
+    bottom: calc(100% - 300px);
+    opacity: 1;
+}
+
+.img-block-cars:hover .car:nth-child(7) {
+    right: calc(100% - 300px);
+    top: calc(100% - 300px);
+    opacity: 1;
+}
+
+.img-block-cars:hover .car:nth-child(8) {
+    right: calc(100% - 300px);
+    bottom: calc(100% - 300px);
+    opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.pantone {
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    margin: 100px auto;
+    background-color: purple;
+
+}
+
+.pantone__colors1 {
+    background: blue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 1s;
+}
+
+.pantone__colors2 {
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+
+.pantone__colors3 {
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    transition: 1s;
+}
+
+.pantone__colors4 {
+    background: magenta;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 400px;
+    top: 0;
+    transition: 1s;
+}
+
+.pantone__colors5 {
+    background: mistyrose;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 600px;
+    top: 0;
+    transition: 1s;
+}
+
+.pantone__colors6 {
+    background: darkorange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 800px;
+    top: 0;
+    transition: 1s;
+
+}
+
+.pantone__colors7 {
+    background: red;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 800px;
+    bottom: 0;
+    transition: 1s;
+
+}
+
+.pantone__colors8 {
+    background: darkblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    transition: 1s;
+
+}
+
+.pantone__colors9 {
+    background: cadetblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 400px;
+    bottom: 0;
+    transition: 1s;
+
+}
+
+.pantone__colors10 {
+    background: saddlebrown;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 600px;
+    bottom: 0;
+    transition: 1s;
+
+}
+
+.pantone:hover .pantone__colors1 {
+    left: 400px;
+    top: 0px;
+}
+
+.pantone:hover .pantone__colors2 {
+    right: 800px;
+    bottom: 200px;
+}
+
+.pantone:hover .pantone__colors3 {
+    left: 200px;
+    top: 200px;
+}
+
+.pantone:hover .pantone__colors4 {
+    left: 200px;
+    bottom: 200px;
+}
+
+.pantone:hover .pantone__colors5 {
+    left: 400px;
+    top: 200px;
+}
+
+.pantone:hover .pantone__colors6 {
+    left: 600px;
+    top: 200px;
+}
+
+.pantone:hover .pantone__colors7 {
+    left: 0;
+    bottom: 0;
+}
+
+.pantone:hover .pantone__colors8 {
+    left: 800px;
+    bottom: 200px;
+}
+
+.pantone:hover .pantone__colors9 {
+    left: 800px;
+    bottom: 0px;
+}
+
+.pantone:hover .pantone__colors10 {
+    left: 600px;
+    bottom: 200px;
+}
+
+.home {
+    width: 100%;
+    height: 500px;
+    background: mistyrose;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home__text {
+    font-size: 12px;
+    font-weight: 700;
+    color: aqua;
+    width: 200px;
+    height: 200px;
+    background: beige;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.woman {
+    height: 500px;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.woman__kids {
+    width: 250px;
+    height: 250px;
+    background: yellow;
+    font-size: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.woman__man {
+    width: 250px;
+    height: 250px;
+    background: blue;
+    font-size: 10px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.tasty {
+    background-image: url(./image/kamchatskiy-krab.jpeg);
+    width: 100%;
+    min-height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.tasty__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+
+
+
+}
+.tasty__container {
+    width: 300px;
+    height: 300px;
+    background: white;
+    text-align: center;
+    padding: 100px 25px;
+
+}
+
+.tasty__content {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tasty__text {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+.paradise {
+    background-image: url(./image/male.jpeg);
+    min-height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.paradise__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    padding-right: 200px;
+    margin: 0 auto;
+}
+.paradise__dream {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.paradise__summer{
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    width: 400px;
+    padding: 500px 20px 0;
+
+}
+
+.paradise__foto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+
+}
+
+.paradise__beach {
+    width: 250px;
+    align-items: center;
+
+}
+.paradise__sea {
+    width: 250px;
+    align-items: center;
+}
+.car {
+    background-image: url(./image/porshe.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 800px;
+}
+
+.car__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.car__inside {
+    width: 200px;
+    border-radius: 50%;
+
+}
+.car__outside {
+    width: 300px;
+}
+
+.car__nice {
+
+}
+.car__detail {
+    width: 300px;
+}

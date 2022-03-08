@@ -1,0 +1,933 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NEXT_ART";
+  src: url(fonts/NEXT_ART_Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT_ART";
+  src: url(fonts/NEXT_ART_Heavy.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT_ART";
+  src: url(fonts/NEXT_ART_Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT_ART";
+  src: url(fonts/NEXT_ART_Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT_ART";
+  src: url(fonts/NEXT_ART_SemiBold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NEXT_ART";
+  src: url(fonts/NEXT_ART_Thin.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+body {
+  background: black;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.company {
+  margin-top: 20px;
+}
+.company__caption {
+  font-family: "NEXT_ART";
+  font-weight: 400;
+  font-size: 50px;
+  color: #C2B5A3;
+  margin: 94px 0 90px 20px;
+}
+@media (max-width: 610px) {
+  .company__caption {
+    font-size: 30px;
+  }
+}
+.company__about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 1050px) {
+  .company__about-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.company__team {
+  width: 50%;
+  padding-left: 20px;
+}
+.company__command {
+  font-family: "NEXT_ART";
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  margin-top: 22px;
+}
+.company__line {
+  width: 100%;
+  margin-top: 26px;
+}
+.company__free-from {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 20px;
+  color: #C2B5A3;
+  margin-right: 17px;
+  margin-top: 22px;
+}
+@media (max-width: 1050px) {
+  .company__free-from {
+    display: none;
+  }
+}
+.company__сo-founders {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  margin-top: 436px;
+}
+@media (max-width: 1050px) {
+  .company__сo-founders {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .company__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.company__portfolio {
+  width: 258px;
+  height: 50px;
+  background: #C2B5A3;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "NEXT_ART";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.company__benefits {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 72px;
+}
+@media (max-width: 1100px) {
+  .company__benefits {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.company__starts {
+  font-family: "NEXT_ART";
+  font-size: 25px;
+  font-weight: 700;
+  color: #C2B5A3;
+}
+@media (max-width: 1100px) {
+  .company__starts {
+    margin-top: 34px;
+    margin-left: 10px;
+    font-size: 19px;
+  }
+}
+.company__starts2 {
+  font-family: "NEXT_ART";
+  font-size: 25px;
+  font-weight: 700;
+  color: #C2B5A3;
+}
+@media (max-width: 1100px) {
+  .company__starts2 {
+    margin-top: 34px;
+    margin-left: 50px;
+    font-size: 19px;
+  }
+}
+.company__starts3 {
+  font-family: "NEXT_ART";
+  font-size: 25px;
+  font-weight: 700;
+  color: #C2B5A3;
+}
+@media (max-width: 1100px) {
+  .company__starts3 {
+    margin-top: 34px;
+    margin-left: 115px;
+    font-size: 19px;
+  }
+}
+
+.services {
+  margin-top: 75px;
+}
+.services__ideas {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.services__choice {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 91px;
+}
+@media (max-width: 930px) {
+  .services__choice {
+    font-size: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .services__choice {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .services__choice {
+    font-size: 19px;
+  }
+}
+.services__choice2 {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 91px;
+}
+@media (max-width: 930px) {
+  .services__choice2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .services__choice2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .services__choice2 {
+    font-size: 19px;
+  }
+}
+.services__choice3 {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 91px;
+}
+@media (max-width: 930px) {
+  .services__choice3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .services__choice3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .services__choice3 {
+    font-size: 19px;
+  }
+}
+.services__choice4 {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 106px;
+}
+@media (max-width: 930px) {
+  .services__choice4 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .services__choice4 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .services__choice4 {
+    font-size: 19px;
+  }
+}
+
+.projects {
+  margin-top: 94px;
+}
+.projects__our-projects {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 50px;
+  color: #C2B5A3;
+  margin-bottom: 125px;
+  margin-left: 20px;
+}
+@media (max-width: 1050px) {
+  .projects__our-projects {
+    font-size: 40px;
+    margin-bottom: 88px;
+  }
+}
+@media (max-width: 700px) {
+  .projects__our-projects {
+    font-size: 30px;
+  }
+}
+.projects__menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1130px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+@media (max-width: 1050px) {
+  .projects__menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1050px) {
+  .projects__kitchen {
+    margin-top: 110px;
+    width: initial;
+  }
+}
+.projects__kitchen2 {
+  margin-top: 103px;
+}
+@media (max-width: 1050px) {
+  .projects__kitchen2 {
+    width: initial;
+  }
+}
+.projects__projection {
+  font-family: "NEXT_ART";
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  line-height: 28px;
+  width: 378px;
+  margin-top: 19px;
+}
+@media (max-width: 1050px) {
+  .projects__projection {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 293px;
+    margin: 30px 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .projects__projection {
+    font-size: 19px;
+    width: 100%;
+  }
+}
+@media (max-width: 455px) {
+  .projects__projection {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+.projects__desing {
+  align-self: center;
+}
+@media (max-width: 600px) {
+  .projects__desing {
+    width: 377px;
+    height: 322px;
+  }
+}
+@media (max-width: 450px) {
+  .projects__desing {
+    width: 300px;
+    height: 245px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+.projects__button-watch {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 1050px) {
+  .projects__button-watch {
+    margin-top: 19px;
+  }
+}
+.projects__watch {
+  width: 322px;
+  height: 59px;
+  border-radius: 5px;
+  background: #C2B5A3;
+  font-family: "NEXT_ART";
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -54px;
+  right: 0;
+}
+@media (max-width: 1050px) {
+  .projects__watch {
+    bottom: 0;
+    position: initial;
+  }
+}
+@media (max-width: 600px) {
+  .projects__watch {
+    font-size: 19px;
+  }
+}
+.projects__button-go-over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 114px;
+  margin-bottom: 300px;
+}
+.projects__go-over {
+  font-family: "NEXT_ART";
+  font-weight: 600;
+  font-size: 30px;
+  background: #C2B5A3;
+  border-radius: 5px;
+  width: 580px;
+  height: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .projects__go-over {
+    width: 332px;
+    height: 59px;
+    font-size: 19px;
+  }
+}
+
+.attendance {
+  margin: 0 auto;
+}
+.attendance__offer {
+  margin-left: 21px;
+}
+.attendance__our-offer {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 50px;
+  color: #C2B5A3;
+}
+@media (max-width: 690px) {
+  .attendance__our-offer {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.attendance__quality {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 177px;
+}
+@media (max-width: 690px) {
+  .attendance__quality {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+}
+.attendance__info-offer {
+  width: 25%;
+}
+@media (max-width: 690px) {
+  .attendance__info-offer {
+    width: 70%;
+  }
+}
+.attendance__block-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attendance__offer-text {
+  font-family: "NEXT_ART";
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  margin-top: 39px;
+  text-align: center;
+}
+@media (max-width: 690px) {
+  .attendance__range {
+    border: 1px solid #FFFFFF;
+    transform: rotate(0.14deg);
+    width: 350px;
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 690px) {
+  .attendance__offer-image {
+    margin-top: 82px;
+  }
+}
+.attendance__meets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+.attendance__lern {
+  width: 476px;
+  height: 92px;
+  background: #C2B5A3;
+  border-radius: 5px;
+  font-family: "NEXT_ART";
+  font-weight: 600;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnership {
+  margin: 0 auto;
+}
+.partnership__our-partnership {
+  width: 100%;
+}
+.partnership__responsibilities {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 50px;
+  color: #C2B5A3;
+  margin-top: 165px;
+  margin-left: 20px;
+}
+@media (max-width: 690px) {
+  .partnership__responsibilities {
+    font-size: 30px;
+  }
+}
+.partnership__brands {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 153px auto 199px;
+}
+@media (max-width: 600px) {
+  .partnership__brand-name {
+    width: 100px;
+  }
+}
+.partnership__brand-name1 {
+  width: 100px;
+}
+.partnership__block-brand {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .partnership__block-brand {
+    width: 50%;
+    margin-top: 47px;
+  }
+}
+.partnership__block-brand2 {
+  margin-top: 108px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .partnership__block-brand2 {
+    width: 50%;
+    margin-top: 47px;
+  }
+}
+
+.social__connection {
+  display: flex;
+}
+@media (max-width: 1115px) {
+  .social__connection {
+    flex-direction: column;
+  }
+}
+.social__plan {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 1050px) {
+  .social__plan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1050px) {
+  .social__plan-house {
+    width: 439px;
+    height: 284px;
+  }
+}
+@media (max-width: 510px) {
+  .social__plan-house {
+    width: 360px;
+    height: 205px;
+  }
+}
+.social__communication {
+  width: 50%;
+  margin: 0 auto;
+}
+.social__block-price {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__price {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 35px;
+  color: #C2B5A3;
+  margin-bottom: 40px;
+  width: 551px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .social__price {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .social__price {
+    font-size: 13px;
+  }
+}
+.social__block-find {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+@media (max-width: 940px) {
+  .social__block-find {
+    padding: 0;
+  }
+}
+.social__phone-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__phone {
+  font-weight: 700;
+  font-size: 35px;
+  color: #C2B5A3;
+  margin-top: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 1115px) {
+  .social__phone {
+    font-size: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .social__phone {
+    font-size: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .social__phone {
+    font-size: 10px;
+  }
+}
+
+.village__hous {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 94px;
+  margin-left: 150px;
+}
+@media (max-width: 1115px) {
+  .village__hous {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+.village__hous-text {
+  color: #C2B5A3;
+  font-size: 35px;
+  font-family: "NEXT_ART";
+  font-weight: 700;
+}
+@media (max-width: 1115px) {
+  .village__hous-text {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 750px) {
+  .village__hous-text {
+    font-size: 17px;
+  }
+}
+@media (max-width: 500px) {
+  .village__hous-text {
+    font-size: 12px;
+  }
+}
+.village__function {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 114px 150px 224px 170px;
+}
+@media (max-width: 1120px) {
+  .village__function {
+    align-items: center;
+    width: 550px;
+  }
+}
+@media (max-width: 800px) {
+  .village__function {
+    margin: 114px auto 114px;
+    width: 400px;
+  }
+}
+@media (max-width: 675px) {
+  .village__function {
+    margin: 80px auto 70px;
+    width: 300px;
+  }
+}
+@media (max-width: 520px) {
+  .village__function {
+    align-items: center;
+    width: 250px;
+    margin: 80px auto 70px;
+  }
+}
+.village__choose {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.village__apartment {
+  text-align: center;
+  font-size: 35px;
+  font-family: "NEXT_ART";
+  font-weight: 600;
+  color: #C2B5A3;
+}
+@media (max-width: 1200px) {
+  .village__apartment {
+    font-size: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .village__apartment {
+    font-size: 15px;
+  }
+}
+@media (max-width: 580px) {
+  .village__apartment {
+    font-size: 11px;
+  }
+}
+.village__premium {
+  font-size: 35px;
+  font-family: "NEXT_ART";
+  font-weight: 400;
+  color: white;
+  margin-top: 57px;
+}
+@media (max-width: 1200px) {
+  .village__premium {
+    font-size: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .village__premium {
+    font-size: 15px;
+  }
+}
+@media (max-width: 580px) {
+  .village__premium {
+    font-size: 11px;
+  }
+}
+.village__inter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.village__solution {
+  margin: 0px 120px 114px 120px;
+  width: 900px;
+  height: 700px;
+}
+@media (max-width: 1070px) {
+  .village__solution {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media (max-width: 720px) {
+  .village__solution {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 530px) {
+  .village__solution {
+    width: 280px;
+    height: 180px;
+  }
+}
+
+.free__from {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.free__free-free {
+  width: 538px;
+  height: 69px;
+  margin-top: 52px;
+}
+@media (max-width: 837px) {
+  .free__free-free {
+    width: 250px;
+    height: 35px;
+  }
+}
+.free__work {
+  margin-top: 120px;
+  margin-left: 130px;
+}
+.free__text {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 35px;
+  color: #C2B5A3;
+  width: 835px;
+}
+@media (max-width: 817px) {
+  .free__text {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+  }
+}
+@media (max-width: 650px) {
+  .free__text {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .free__text {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+  }
+}
+.free__project {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-top: 74px;
+}
+.free__perform {
+  margin-top: 83px;
+}
+.free__text-img {
+  font-family: "NEXT_ART";
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 460px;
+  height: 40px;
+  margin-top: 22px;
+}
+@media (max-width: 650px) {
+  .free__text-img {
+    font-size: 17px;
+  }
+}
+@media (max-width: 440px) {
+  .free__text-img {
+    font-size: 13px;
+    width: 300px;
+  }
+}
+.free__botton {
+  margin-bottom: 120px;
+}
+
+/*# sourceMappingURL=style.css.map */

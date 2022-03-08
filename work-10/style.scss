@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+@import "fonts";
+@import "colors";
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fashion {
+
+
+  &__blog {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name{
+    margin-top: 34px;
+    margin-left: 80px;
+  }
+  &__text{
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 368px;
+    margin-top: 42px;
+    margin-left: 81px;
+  }
+  &__inside{
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
